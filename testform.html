@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Test Form</title>
+    <style>
+        form {
+            border: 5px solid gray;
+            width: 40%;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: beige;
+            color: darkcyan;
+            margin-left: 450px;
+        }
+
+        h2 {
+            border: 2px solid gray;
+            text-align: center;
+            margin: 0px;
+            background-color: darkcyan;
+            color: white;
+        }
+
+        form input:hover {
+            border: 2px solid black;
+        }
+
+        form textarea:hover {
+            border: 2px solid black;
+        }
+
+        .button {
+            background-color: darkcyan;
+            color: whitesmoke;
+            padding: 5px;
+            font-size: large;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form oninput="result.value=gr.value">
+        <h2 style="padding-left: 0px;">Create Account</h2><br>
+        First Name* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Last Name*
+        <br><input type="text" name="fname" placeholder="Enter First Name" required>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" name="lname" placeholder="Enter Last Name" required><br><br>
+
+
+        Email* <br>
+        <input type="email" name="mail" placeholder="Enter Email" required><br><br>
+
+
+        password* &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Conform
+        Password*
+        <br><input type="password" name="password" placeholder="Enter Password"
+            required>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="password" name="conformpassword" placeholder="Renter Password"><br><br>
+
+        Gender: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+        Hobbies:
+        <br><input type="radio" name="gen" value="Male">Male
+        <input type="radio" name="gen" value="Female">Female
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" name="hob" value="Music">Music
+        <input type="checkbox" name="hob" value="Sports">Sports
+        <input type="checkbox" name="hob" value="travel">Travel
+        <input type="checkbox" name="hob" value="Movies">Movies <br><br>
+
+        Source Of Income:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Income:
+        <br><select name="browsers">
+            <option value="Employed">Employed</option>
+            <option value="Bussinese">Bussinese</option>
+            <option value="Professional">Professinol</option>
+            <option value="Self Employed">Self Employed</option>
+        </select>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+        <input type="range" min="0" max="100" value="20" step="10" id="gr">
+        <output name="result" for="gr">20</output>k
+        <br><br>
+        <!-- <input type="date" name="dob"><br><br> -->
+
+        Uplod Profile Picture: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Age:
+        <br><input type="file" name="picture">&nbsp;
+        <input type="number" name="age" min="1" max="60" value="18"><br><br>
+
+        Bio:
+        <br><textarea name="bio" cols="40" rows="5"></textarea><br><br>
+
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <input type="submit" name="submit" value="Submit"
+            class="button">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;<input type="reset" name="reset" value="Clear" class="button">
+
+
+
+    </form>
+</body>
+
+</html>
